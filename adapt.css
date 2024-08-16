@@ -1,0 +1,30 @@
+:root {
+	--maxWidth: 1920px;
+	--maxWidthContainer: 1170px;
+}
+
+.adaptiv-type1 {
+	width: 1200px; /* replace with your property and start size */
+}
+
+@media (max-width: 1170px) {
+	.adaptiv-type1 {
+		width: calc(400px + (800 * ((100vw - 320px) / (1170 - 320))));
+	}
+}
+
+.adaptiv-type2 {
+	width: 1200px; /* replace with your property and start size */
+}
+
+@media (max-width: 1170px) {
+	.adaptiv-type2 {
+		width: calc(400px + (800 * ((100vw - 600px) / (1170 - 600))));
+	}
+}
+
+.adaptiv-other {
+	width: calc(
+		400px + (800 * ((100vw - 414px) / (1920 - 414)))
+	); /* replace with your property and min size */
+}
